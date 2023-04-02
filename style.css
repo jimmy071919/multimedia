@@ -211,9 +211,9 @@ input[name="tab"][value="0"]:checked~#programskill,input[name="tab"][value="1"]:
     display: -webkit-box;
 }
 .name{
-    background:#84A59D;
+    background:#EDEDE9;
     box-sizing: border-box;
-    color: #D5BDAF;
+    color: #EDEDE9;
     font-size: .8px;
     line-height: 2.3;
     margin: 1em .5em 1em 0 ;
@@ -221,37 +221,35 @@ input[name="tab"][value="0"]:checked~#programskill,input[name="tab"][value="1"]:
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 3.5em;
+    width: 3px;
 }
 .bar-value{
     box-sizing: border-box;
     color: #84A59D;
     font-size: .8px;
-    margin: lem .5em 1em 0 ;
+    margin: 1em .5em 1em 0 ;
     padding: .5em;
     text-align: center;
     -webkit-transition: all 1s;
 }
 .item:nth-child(1) .bar-value{
-    background: #F6BD60;
+    background: #F7EDE2;
     width: 0;
 }
 .item:nth-child(1) .bar-value.action{
-    
     width: 80%;
 }
 .item:nth-child(2) .bar-value{
-    background: #F6BD60;
+    background: #F7EDE2;
     width: 0;
 }
-.item:nth-child(2) .bar-value
-    width: 80%;
-}
-.item:nth-child(3) .bar-value{
-    background: #F6BD60;
+.item:nth-child(2) .bar-value{
     width: 90%;
 }
+.item:nth-child(3) .bar-value{
+    background: #F7EDE2;
+    width: 0%;
+}
 .item:nth-child(3) .bar-value.action{
-
     width: 70%;
 }
