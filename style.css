@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #F7EDE2;
+    /* 顏色要加上#才可以用 */
+    margin: 0px;
+    /* 使區塊和區塊之間是在一起的 中間沒有空格 */
+}
+/* ---------------------------------- */
+.moveword
+{
+    animation: move-left-right 5s linear infinite;
+    font-size: 200%;
+    font-family: 'Changa One', cursive;
+    color: #84A59D;
+    font-weight: bolder ;
+    z-index: 2;
+}
+@keyframes move-left-right {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* ---------------------------------- */
+header
+{
+    background-color:#F6BD60 ;
+    padding: 20px;
+    margin: 20px 10px;
+
+    border-radius: 10px;
+    /* 加上圓弧 */
+    background-size: cover;
+    /* 使背景螢幕填滿 */
+}
+.resumebackimg
+{   
+    margin: 0 auto; 
+    border: 10%;
+    padding: 0%;
+    
+    width: 850px;
+    height: 900px;
+    display: block; 
+    border-radius: 3%;
+}
+.percontent{
+    padding: 2% 2%;
+}
+#frame{
+    position:absolute;
+    left: 37%;
+    top: 13%;
+    display: block; 
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+}
+#myself{
+    position:relative;
+    left: 0%;
+    bottom: 100%;
+    z-index: 2;
+    display: block; 
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    
+}
+.content{
+    position: relative;
+    
+    display: block; 
+    margin: 0 auto;
+    text-align: center;
+}
+#myname
+{
+    text-align: center;
+    font-size: 300%;
+    font-family: 微軟;
+}
+#myslogan
+{
+    font-size: 200%;
+    font-style: italic;
+}
+#myinformation
+{
+
+}
+/* --------------------------------- */
+.uppart
+{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}
+nav{
+    background-color: #F5CAC3;
+    text-align: center;
+    font-family: 微軟正黑體 ;
+    font-weight: bolder;
+    clear: both;
+    border-radius: 0px 0% 0% 10% ;
+}
+nav a {
+    padding: 14px 16px;
+    display: inline-block;
+    /* 連接成一列 */
+}
+div.asidepart
+{
+    position: fixed;
+    right: 2%;
+    bottom: 0%;
+}
+.gotop
+{
+    float: left;
+}
