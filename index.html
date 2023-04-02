@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>😉jimmy chen😉</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
@@ -54,9 +55,15 @@
             <input type="radio" name="tab" value="0" title="程式能力" checked>
             <input type="radio" name="tab" value="1" title="心理學能力">
             <div id="programskill" class="proskill">
-                <section class="proskill">
-                    
-                </section>
+                <div class="proskillpic">
+                    <figure class="graph">
+                        <ul class="bar-graph">
+                            <li class="item"><p class="name">java</p><p class="bar-value">200000</p></li>
+                            <li class="item"><p class="name">python</p><p class="bar-value">210000</p></li>
+                            <li class="item"><p class="name">HTML</p><p class="bar-value">300034</p></li>
+                        </ul>
+                    </figure>
+                </div>
             </div>
             <div id="psyskill" class="proskill">
                 
@@ -74,6 +81,8 @@
         <!-- <div class="ig"><a href="https://instagram.com/jimmy071919?igshid=Mzc1MmZhNjY=" target="_blank"><img src="image/instagram.png"  alt="圖片出錯了" ></a></div> -->
         <div class="gotop"><a href="#top"><img src="image/top.png" alt="圖片出錯了"></a></div>
     </div>
-
+    $(function(){
+        $('.bar-value').addClass('action'); 
+     })();
 </body>
 </html>
