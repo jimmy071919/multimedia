@@ -8,9 +8,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Sans+TC:wght@500;900&display=swap" rel="stylesheet">
 <body>
     <header class="moveword">
         <p>resume</p>
@@ -38,20 +38,20 @@
     </section>
 <!-- ----------------------------跳轉選單------------------------------- -->
     <nav class="uppart">
-        <a href="#top">top</a>
-        <a href="">專業能力</a>
-        <a href="">個人經歷</a>
-        <a href="">興趣</a>
+        <a href="#end"><img src="image/down.png" alt=""></a>
+        <a href="#prskill"><img src="image/skill.png" alt=""></a>
+        <a href="#lifeexperience"><img src="image/sticky-notes.png" alt=""></a>
+        <a href=""><img src="image/music.png" alt=""></a>
     </nav>
     <nav class="keepart">
-        <a href="#skill">專業能力</a>
-        <a href="">個人經歷</a>
-        <a href="">興趣</a>
+        <a href="#prskill"><img src="image/skill.png" alt="出錯了"><br>ProfessionalSkill</a>
+        <a href="#lifeexperience"><img src="image/sticky-notes.png" alt="玩了"><br>experience</a>
+        <a href=""><img src="image/music.png" alt="錯誤"><br>habbit</a>
     </nav>
 <!-- ------------------------------專業能力---------------------------- -->
-    <section class="skill" name="skill">
+    <section class="skill" id="prskill">
 
-        <div class="skilllist">
+        <div class="skilllist" >
             <input type="radio" name="tab" value="0" title="程式能力" checked>
             <input type="radio" name="tab" value="1" title="心理學能力">
             <div id="programskill" class="proskill">
@@ -59,23 +59,61 @@
                     <figure class="graph">
                         <figcaption class="gcaption">程式專業能力</figcaption>
                         <ul class="bar-graph">
-                            <li class="item"><p class="bar-name">java</p><p class="bar-value">java</p></li>
-                            <li class="item"><p class="bar-name">python</p><p class="bar-value">python</p></li>
-                            <li class="item"><p class="bar-name">HTML</p><p class="bar-value">html</p></li>
+                            <li class="item"><p class="bar-name">java</p><p class="bar-value">80%</p></li>
+                            <li class="item"><p class="bar-name">python</p><p class="bar-value">90%</p></li>
+                            <li class="item"><p class="bar-name">HTML</p><p class="bar-value">70%</p></li>
                         </ul>
                     </figure>
                 </div>
             </div>
             <div id="psyskill" class="proskill">
-                
+                <figure class="graph">
+                    <figcaption class="gcaption">心理專業能力</figcaption>
+                    <ul class="bar-graph">
+                        <li class="itempsy"><p class="bar-namepsy">認知心理學</p><p class="bar-value">90%</p></li>
+                        <li class="itempsy"><p class="bar-namepsy">人格心理學</p><p class="bar-value">95%</p></li>
+                        <li class="itempsy"><p class="bar-namepsy">知覺心理學</p><p class="bar-value">90%</p></li>
+                        <li class="itempsy"><p class="bar-namepsy">社會心理學</p><p class="bar-value">90%</p></li>
+                        <li class="itempsy"><p class="bar-namepsy">發展心理學</p><p class="bar-value">95%</p></li>
+                        <li class="itempsy"><p class="bar-namepsy">生理心理學</p><p class="bar-value">95%</p></li>
+                        <li class="itempsy"><p class="bar-namepsy">心理學方法</p><p class="bar-value">80%</p></li>
+                    </ul>
+                </figure>
             </div>
         </div>
     </section>
+<!-- ------------------------個人經歷------------------------- -->
+    <section class="experience" id="lifeexperience">
+        <input type="radio" name="extab" value="s" title="學經歷" checked>
+        <input type="radio" name="extab" value="c" title="企業概論">
+        <input type="radio" name="extab" value="t" title="心理學專題">
+        <input type="radio" name="extab" value="a" title="獎狀">
+        <div id="study" class="exper">
+            <section class="school" >
+                <p>三重國小</p>
+                <p>靜修女中附設國中部</p>
+                <p>錦和高中</p>
+                <p>中原大學心理學系</p>
+            </section>
+        </div>
+        <div id="cookies" class="exper">
+            嗨
+        </div>
 
-    <section class="experience"></section>
+        <div id="timeperception" class="exper">
+            嗨嗨
+        </div>
+
+        <div id="award" class="exper">
+            嗨嗨嗨
+        </div>
+
+    </section>
+<!-- -------------------------興趣----------------------------- -->
     <section class="habit"></section>
+
     <section></section>
-    <footer>
+    <footer id="end">
         <address class="Contact"></address>
     </footer>
     <div class="asidepart">
@@ -87,7 +125,7 @@
     <script>
         setInterval(function() {
         $('.bar-value').addClass('action'); 
-        }, 4000);
+        }, 500);
     </script>
     
 </body>
