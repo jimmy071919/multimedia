@@ -30,7 +30,7 @@ body {
     }
 }
 /* ---------------------------------- */
-header
+#intro
 {
     background-color:#F6BD60 ;
     padding: 20px;
@@ -55,39 +55,46 @@ header
 .percontent{
     padding: 2% 2%;
 }
-#frame{
-    position:absolute;
-    left: 37%;
-    top: 13%;
-    display: block; 
-    margin: 0 auto;
-    width: 350px;
-    height: 350px;
-    z-index: 1;
+.myimgback{
+    -webkit-animation: rotate-r .9s infinite linear ; 
+    border: 10px solid #84A59D;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-right-width: 20%;
+    box-sizing: border-box;
+    position: relative;
+    height: 260px;
+    width: 260px;
+    float: left;
+    position: relative;
+    left: -20.5%;
 }
+@-webkit-keyframes rotate-r
+    {
+        0% {-webkit-transform: rotate(0);}
+        100% {-webkit-transform: rotate(360deg);}
+    }
 #myself{
     position:relative;
     left: 0%;
     bottom: 100%;
-    z-index: 2;
     display: block; 
-    margin: 0 auto;
+    margin: 0 5px;
     width: 250px;
     height: 250px;
-    
+    float: left;
+    top: 10%;
 }
 .content{
     position: relative;
-    
-    display: block; 
-    margin: 0 auto;
-    text-align: center;
+    left: -15%;
+    text-align: left;
 }
 #myname
 {
-    text-align: center;
-    font-size: 300%;
-    font-family: 微軟;
+    font-size: 200%;
+    font-family: 微軟正黑體;
+    
 }
 #myslogan
 {
@@ -96,7 +103,14 @@ header
 }
 #myinformation
 {
-
+    clear: right;
+    font-size: 120%;
+}
+.moreinfor
+{
+    clear: both;
+    position: relative;
+    
 }
 /* --------------------------------- */
 .uppart
