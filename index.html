@@ -7,13 +7,14 @@
     <title>😉jimmy chen😉</title>
 
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
     <header class="moveword">
         <p>resume</p>
     </header>
-    <!-- 個人資料 簡介 個人照片 -->
+    <!-- -------------------個人資料 簡介 個人照片 ------------------>
     <section  name="top" id="intro">
         <!-- <img class="resumebackimg" src="image/resumeback.png" alt="nono"> -->
         
@@ -22,7 +23,6 @@
             <img class="myimg" id="myself" src="image/個人.jpg" alt="nono">
             <div class="myimgback" id="frame"></div>
             
-
             <div class="content">
                 <h1 id="myname">陳冠豪</h1>
                 <p id="myslogan">Sweat is the lubricant of success.</p>
@@ -32,18 +32,10 @@
                         iusto, porro atque natus?
                 </p>
             </div>
-            
-            <div>
-                <table class="moreinfor">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </table>
-            </div>
            
         </section>
     </section>
+<!-- ----------------------------跳轉選單------------------------------- -->
     <nav class="uppart">
         <a href="#top">top</a>
         <a href="">專業能力</a>
@@ -51,11 +43,27 @@
         <a href="">興趣</a>
     </nav>
     <nav class="keepart">
-        <a href="">專業能力</a>
+        <a href="#skill">專業能力</a>
         <a href="">個人經歷</a>
         <a href="">興趣</a>
     </nav>
-    <section class="skill"></section>
+<!-- ------------------------------專業能力---------------------------- -->
+    <section class="skill" name="skill">
+
+        <div class="skilllist">
+            <input type="radio" name="tab" value="0" title="程式能力" checked>
+            <input type="radio" name="tab" value="1" title="心理學能力">
+            <div id="programskill" class="proskill">
+                <section class="proskill">
+                    
+                </section>
+            </div>
+            <div id="psyskill" class="proskill">
+                
+            </div>
+        </div>
+    </section>
+
     <section class="experience"></section>
     <section class="habit"></section>
     <section></section>

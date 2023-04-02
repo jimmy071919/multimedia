@@ -1,21 +1,20 @@
 * {
     box-sizing: border-box;
-
 }
 body {
     background-color: #F7EDE2;
     /* 顏色要加上#才可以用 */
     margin: 0px;
     /* 使區塊和區塊之間是在一起的 中間沒有空格 */
+    cursor:url(image/liz.png);
 }
 /* ---------------------------------- */
 .moveword
 {
-    animation: move-left-right 5s linear infinite;
+    animation: move-left-right 15s linear infinite;
     font-size: 200%;
-    font-family: 'Changa One', cursive;
+    font-family: 'Rowdies', cursive;
     color: #84A59D;
-    font-weight: bolder ;
     z-index: 2;
 }
 @keyframes move-left-right {
@@ -89,6 +88,7 @@ body {
     position: relative;
     left: -15%;
     text-align: left;
+    
 }
 #myname
 {
@@ -98,7 +98,7 @@ body {
 }
 #myslogan
 {
-    font-size: 200%;
+    font-size: 150%;
     font-style: italic;
 }
 #myinformation
@@ -108,30 +108,47 @@ body {
 }
 .moreinfor
 {
-    clear: both;
-    position: relative;
-    
+
 }
 /* --------------------------------- */
+nav a {
+    padding: 20px 10px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px  10px 10px 10px;
+    /* 連接成一列 */
+    text-decoration:none;
+    /* 使超連結下方無底線 */
+}
 .uppart
 {
+    background-color: #F6BD60;
     position: fixed;
     top: 0%;
     right: 0%;
+    border-radius: 0px  0px 10px 10px;
 }
-nav{
+.keepart{
     background-color: #F5CAC3;
     text-align: center;
-    font-family: 微軟正黑體 ;
     font-weight: bolder;
     clear: both;
-    border-radius: 0px 0% 0% 10% ;
+    padding: 20px;
+    margin: 20px 10px;
+
+    border-radius: 10px;
+    /* 加上圓弧 */
+    background-size: cover;
+    /* 使背景螢幕填滿 */
 }
-nav a {
-    padding: 14px 16px;
-    display: inline-block;
-    /* 連接成一列 */
+.keepart a{
+    background-color: #F5CAC3;;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 5px 150px;
 }
+
+/* ----------------------------------------- */
 div.asidepart
 {
     position: fixed;
@@ -141,4 +158,49 @@ div.asidepart
 .gotop
 {
     float: left;
+}
+/* -----------------專業能力_標籤選單----------------- */
+input[name="tab"]{
+    -webkit-appearance: none;
+    border: 1px solid #EDEDE9;
+    border-radius: 10px 30px  ;
+    cursor: pointer;
+    /* 滑鼠游標特效 */
+    display: inline-block;
+    font-size: 150%;
+    padding: 10px 30px;
+    text-align: center;
+    width: 49%;
+}
+input[name="tab"]
+{
+    background: #EDEDE9 ;
+    color: black;
+}
+input[name="tab"]:checked
+{
+    background: #D5BDAF;
+}
+input[name="tab"]::after{
+    content: attr(title);
+}
+input[name="tab"][value="0"]:checked~#programskill,input[name="tab"][value="1"]:checked~#psyskill{
+    display: block;
+}
+.proskill{
+    border-top: 1px solid #F6BD60;
+    display: none;
+    margin: 20px 0 0 ;
+    text-align: left;
+}
+/* -----------------專業能力_區域設定---------------- */
+.skill{
+    background-color: #F6BD60;
+    padding: 20px;
+    margin: 20px 10px;
+
+    border-radius: 10px;
+    /* 加上圓弧 */
+    background-size: cover;
+    /* 使背景螢幕填滿 */
 }
