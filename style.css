@@ -207,30 +207,37 @@ input[name="tab"][value="0"]:checked~#programskill,input[name="tab"][value="1"]:
     margin: 30px;
     font-family: sans-serif;
 }
+.gcaption{
+    color: #84A59D;
+    margin: 0 0 30px;
+    font-size: 250%;
+    text-align: center;
+}
 .item{
     display: -webkit-box;
 }
 .name{
     background:#EDEDE9;
     box-sizing: border-box;
-    color: #EDEDE9;
-    font-size: .8px;
-    line-height: 2.3;
-    margin: 1em .5em 1em 0 ;
+    color: #84A59D;
+    font-size: 10px;
+    line-height: 5;
+    margin: 10px;
     overflow: hidden;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 3px;
+    width: 80px;
+    height: 50px;
 }
 .bar-value{
     box-sizing: border-box;
     color: #84A59D;
-    font-size: .8px;
+    font-size: 5px;
     margin: 1em .5em 1em 0 ;
-    padding: .5em;
+    padding: 5px;
     text-align: center;
-    -webkit-transition: all 1s;
+    -webkit-transition: all 2s;
 }
 .item:nth-child(1) .bar-value{
     background: #F7EDE2;
@@ -243,7 +250,7 @@ input[name="tab"][value="0"]:checked~#programskill,input[name="tab"][value="1"]:
     background: #F7EDE2;
     width: 0;
 }
-.item:nth-child(2) .bar-value{
+.item:nth-child(2) .bar-value.action{
     width: 90%;
 }
 .item:nth-child(3) .bar-value{
