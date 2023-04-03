@@ -164,6 +164,7 @@ nav a {
 .keepart :hover{
     background-color: #E9C46A;
     color: white;
+    -webkit-transform: scale(1.2);
 }
 /* ----------------------------------------- */
 div.asidepart
@@ -171,6 +172,9 @@ div.asidepart
     position: fixed;
     right: 2%;
     bottom: 0%;
+}
+div.asidepart:hover {
+    -webkit-transform: scale(1.5);
 }
 .gotop
 {
@@ -207,6 +211,7 @@ input[name="tab"][value="0"]:checked~#programskill,input[name="tab"][value="1"]:
 .skill input:hover{
     background-color: azure;
     color: #84A59D;
+    -webkit-transform: scale(1.1);
 }
 .proskill{
     border-top: 1px solid #E9C46A;
@@ -382,6 +387,7 @@ input[name="extab"]::after{
 .experience input:hover{
     background-color: azure;
     color: #84A59D;
+    -webkit-transform: scale(1.1);
 }
 .experience input[name="extab"][value="s"]:checked~#study,input[name="extab"][value="c"]:checked~#cookies,input[name="extab"][value="t"]:checked~#timeperception,input[name="extab"][value="a"]:checked~#award{
     display: block;
@@ -605,6 +611,9 @@ input[name="extab"]::after{
 #award :hover .caption {
     opacity: 1; /* 在鼠标悬停时显示文本 */
   }
+#award :hover img {
+    -webkit-transform: scale(1.5);
+  }
 #caption2 {
     position: absolute; 
     bottom: 0; 
@@ -652,6 +661,28 @@ input[name="extab"]::after{
     opacity: 0; 
     transition: opacity 0.5s; 
     width: 20%
+}
+/* ----------- */
+#mycontact{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color:#E9C46A ;
+    padding: 20px;
+    margin: 20px 10px;
+
+    border-radius: 10px;
+    /* 加上圓弧 */
+    background-size: cover;
+    /* 使背景螢幕填滿 */
+}
+#mycontact a{
+  padding: 20px 170px;
+  margin: 20px 10px;
+
+}
+#mycontact img:hover{
+    -webkit-transform: scale(1.5);
 }
 /* ----------- */
 footer{
