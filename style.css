@@ -6,7 +6,6 @@ body {
     /* 顏色要加上#才可以用 */
     margin: 0px;
     /* 使區塊和區塊之間是在一起的 中間沒有空格 */
-    cursor:url(image/liz.png);
 }
 /* ---------------讓RESUME的字移動------------------- */
 .moveword
@@ -191,6 +190,7 @@ input[name="tab"]{
     padding: 10px 30px;
     text-align: center;
     width: 49%;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 input[name="tab"]
 {
@@ -212,6 +212,7 @@ input[name="tab"][value="0"]:checked~#programskill,input[name="tab"][value="1"]:
     color: #84A59D;
     -webkit-transform: scale(1.1);
 }
+
 .proskill{
     border-top: 1px solid #E9C46A;
     display: none;
@@ -370,6 +371,7 @@ input[name="extab"]{
     padding: 10px 30px;
     text-align: center;
     width: 20%;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 input[name="extab"]
 {
