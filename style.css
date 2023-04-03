@@ -16,17 +16,7 @@ body {
     font-family: 'Delicious Handrawn', cursive;
     /* 背景圖 */
 }
-@keyframes move-left-right {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(900px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+
 #resume{
     -webkit-background-clip: text ;
     background-image: url(image/skill.png);
@@ -74,11 +64,7 @@ body {
     float: left;
     left: -20.5%;
 }
-@-webkit-keyframes rotate-r
-    {
-        0% {-webkit-transform: rotate(0);}
-        100% {-webkit-transform: rotate(360deg);}
-    }
+
 #myself{
     position:relative;
     left: 0.5%;
@@ -440,14 +426,7 @@ input[name="extab"]::after{
     left: 47.5%
     
 }
-@keyframes shake {
-    0% { transform: translate(0, 0); }
-    20% { transform: translate(0, 0); }
-    40% { transform: translate(0, 20px); }
-    60% { transform: translate(0, 0); }
-    80% { transform: translate(0, 20px); }
-    100% { transform: translate(0, 0); }
-  }
+
 .school .titleschool{
     text-align: center;
     font-size: 30px;
@@ -469,6 +448,7 @@ input[name="extab"]::after{
 .small img{
     border-radius: 10px;
 }
+
 .medio .titleschool{
     text-align: center;
     font-size: 30px;
@@ -541,7 +521,183 @@ input[name="extab"]::after{
     line-height: 1.5;
 }
 /* ------------ */
+#timeperception{
+    margin: 20px;
+    padding: 20px;
+}
 #time{
-    font-size: 130%;
+    font-size: 120%;
+    float: right;
+    width: 60%;
+    background-color: #F7EDE2;
+    margin: 5px 7px;
+    padding: 30px 10px;
+    border-radius: 10px;
+    line-height: 2;
+}
+#time p{
+    text-align: center;
+}
+#spacce {
+    height: 500px;
+}
+
+.timepiclist img {
+    position: absolute;
+    top: 184%;
+    left: 10%;
+    opacity: 0;
+    animation: loop 9s infinite;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.timepiclist img:nth-child(2) {
+    animation-delay: 3s;
+}
+  
+.timepiclist img:nth-child(3) {
+    animation-delay: 5s;
+}
+/* ----------- */
+#award img{
+    width: 20%;
+}
+#award{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color:#E9C46A ;
+    padding: 20px;
+    margin: 20px 10px;
+
+    border-radius: 10px;
+    /* 加上圓弧 */
+    background-size: cover;
+    /* 使背景螢幕填滿 */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.aw{
+    margin: 10px;
     float: left;
+}
+.af1{
+    position: relative;
+    float: left;
+}
+.afig1{
+    background: rgba(255,255, 255, .4);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    height: 2em;
+    left: 0;
+    line-height: 2;
+    overflow: hidden;
+    padding: 0 .5em;
+    position: absolute;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 1px (255,255, 255, .2);
+    white-space: nowrap;
+    width: 45%;
+    top: 350px;
+}
+.af2{
+    position: relative;
+    left: 10%;
+}
+.afig2{
+    background: rgba(255,255, 255, .4);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    height: 2em;
+    left: 0;
+    line-height: 2;
+    overflow: hidden;
+    padding: 0 .5em;
+    position: absolute;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 1px (255,255, 255, .2);
+    white-space: nowrap;
+    width: 45%;
+    left:43%;
+    top: 350px;
+}
+.af3{
+    position: relative;
+    left: 0%;
+    top: 0px;
+}
+.afig3{
+    background: rgba(255,255, 255, .4);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    height: 2em;
+    left: 0;
+    line-height: 2;
+    overflow: hidden;
+    padding: 0 .5em;
+    position: absolute;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 1px (255,255, 255, .2);
+    white-space: nowrap;
+    width: 40%;
+    top: 350px;
+}
+/* ----------- */
+footer{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color:#E9C46A ;
+    padding: 20px;
+    margin: 20px 10px;
+
+    border-radius: 10px;
+    /* 加上圓弧 */
+    background-size: cover;
+    /* 使背景螢幕填滿 */
+}
+footer .Contact{
+    text-align: center;
+}
+/* ----------------- */
+@keyframes loop {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    25% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0;
+      transform: scale(1);
+    }
+}
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(0, 0); }
+    40% { transform: translate(0, 20px); }
+    60% { transform: translate(0, 0); }
+    80% { transform: translate(0, 20px); }
+    100% { transform: translate(0, 0); }
+  }
+@-webkit-keyframes rotate-r
+  {
+      0% {-webkit-transform: rotate(0);}
+      100% {-webkit-transform: rotate(360deg);}
+  }
+  @keyframes move-left-right {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
