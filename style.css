@@ -512,7 +512,7 @@ input[name="extab"]::after{
 .photoitem:hover{
     margin: 0 20px;
     position: relative;
-    -webkit-transform: perspective(1000) rotateY('-100') scale(1.5);
+    -webkit-transform: perspective(1000) rotateY('-100') scale(2);
     height: 20%;
     z-index: 2;
 }
@@ -567,10 +567,8 @@ input[name="extab"]::after{
     animation-delay: 5s;
 }
 /* ----------- */
-#award img{
-    width: 20%;
-}
-#award{
+#award {
+    position: relative; 
     margin: 10px;
     padding: 10px;
     font-family: 'Noto Sans TC', sans-serif;
@@ -582,75 +580,78 @@ input[name="extab"]::after{
     /* 加上圓弧 */
     background-size: cover;
     /* 使背景螢幕填滿 */
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-.aw{
-    margin: 10px;
+  }
+#award img{
+    width: 20%;
     float: left;
+    padding: 5px;
+    height: 80%;
 }
-.af1{
-    position: relative;
-    float: left;
+.caption {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 10px; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    width: 10%
+  }
+#limit img{
+    float: none;
 }
-.afig1{
-    background: rgba(255,255, 255, .4);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 120%;
-    height: 2em;
-    left: 0;
-    line-height: 2;
-    overflow: hidden;
-    padding: 0 .5em;
-    position: absolute;
-    text-overflow: ellipsis;
-    text-shadow: 1px 1px 1px (255,255, 255, .2);
-    white-space: nowrap;
-    width: 45%;
-    top: 350px;
+#award :hover .caption {
+    opacity: 1; /* 在鼠标悬停时显示文本 */
+  }
+#caption2 {
+    position: absolute; 
+    bottom: 0; 
+    left: 20%; 
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 10px; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    width: 20%
 }
-.af2{
-    position: relative;
-    left: 10%;
+#caption3 {
+    position: absolute; 
+    bottom: 0; 
+    left: 40%; 
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 10px; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    width: 10%
 }
-.afig2{
-    background: rgba(255,255, 255, .4);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 120%;
-    height: 2em;
-    left: 0;
-    line-height: 2;
-    overflow: hidden;
-    padding: 0 .5em;
-    position: absolute;
-    text-overflow: ellipsis;
-    text-shadow: 1px 1px 1px (255,255, 255, .2);
-    white-space: nowrap;
-    width: 45%;
-    left:43%;
-    top: 350px;
+#caption4 {
+    position: absolute; 
+    bottom: 0; 
+    left: 60%; 
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 10px; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    width: 20%
 }
-.af3{
-    position: relative;
-    left: 0%;
-    top: 0px;
-}
-.afig3{
-    background: rgba(255,255, 255, .4);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 120%;
-    height: 2em;
-    left: 0;
-    line-height: 2;
-    overflow: hidden;
-    padding: 0 .5em;
-    position: absolute;
-    text-overflow: ellipsis;
-    text-shadow: 1px 1px 1px (255,255, 255, .2);
-    white-space: nowrap;
-    width: 40%;
-    top: 350px;
+#caption5 {
+    position: absolute; 
+    bottom: 0; 
+    left: 80%; 
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 10px; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    width: 20%
 }
 /* ----------- */
 footer{
