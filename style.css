@@ -11,7 +11,7 @@ body {
 .moveword
 {
     animation: move-left-right 15s linear infinite;
-    font-size: 300%;
+    font-size: 50px;
     font-family: 'Delicious Handrawn', cursive;
     /* 背景圖 */
 }
@@ -29,7 +29,7 @@ body {
     background-color:#E9C46A ;
     padding: 20px;
     margin: 20px 10px;
-
+    width: 1330px;
     border-radius: 10px;
     /* 加上圓弧 */
     background-size: cover;
@@ -38,29 +38,29 @@ body {
 .resumebackimg
 {   
     margin: 0 auto; 
-    border: 10%;
+    border: 10px;
     padding: 0%;
     
     width: 870px;
     height: 900px;
     display: block; 
-    border-radius: 3%;
+    border-radius: 3px;
 }
 .percontent{
-    padding: 2% 2%;
+    padding: 10px 10px;
 }
 .myimgback{
     -webkit-animation: rotate-r .9s infinite linear ; 
     border: 10px solid #84A59D;
     border-radius: 50%;
     border-right-color: transparent;
-    border-right-width: 20%;
+    border-right-width: 20px;
     box-sizing: border-box;
     position: relative;
     height: 260px;
     width: 260px;
     float: left;
-    left: -20.5%;
+    left: -250.5px;
 }
 
 #myself{
@@ -72,30 +72,27 @@ body {
     width: 250px;
     height: 250px;
     float: left;
-    top: 10%;
 }
 .content{
     position: relative;
-    left: -15%;
+    left: -200px;
     text-align: center;
-    
-    
 }
 #myname
 {
-    font-size: 200%;
+    font-size: 30px;
     font-family: 'Noto Sans TC', sans-serif;
     
 }
 #myslogan
 {
-    font-size: 150%;
+    font-size: 30px;
     font-style: italic;
 }
 #myinformation
 {
     clear: right;
-    font-size: 120%;
+    font-size: 20px;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -116,7 +113,7 @@ body {
     border-radius: 4px;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 /* --------------------------------- */
 nav a {
@@ -136,7 +133,7 @@ nav a {
     border-radius: 0px  0px 10px 10px;
 }
 .uppart img{
-    width: 70%;
+    width: 40px;
 }
 .keepart{
     text-align: center;
@@ -144,7 +141,7 @@ nav a {
     clear: both;
     padding: 15px 0px;
     margin: 20px 7px;
-
+    width: 1330px;
     border-radius: 10px;
     /* 加上圓弧 */
     background-size: cover;
@@ -224,7 +221,7 @@ input[name="tab"][value="0"]:checked~#programskill,input[name="tab"][value="1"]:
     background-color: #E9C46A;
     padding: 5px;
     margin: 20px 10px;
-
+    width: 1330px;
     border-radius: 10px;
     /* 加上圓弧 */
     background-size: cover;
@@ -408,7 +405,7 @@ input[name="extab"]::after{
     background-color:#E9C46A ;
     padding: 20px;
     margin: 20px 10px;
-
+    width: 1330px;
     border-radius: 10px;
     /* 加上圓弧 */
     background-size: cover;
@@ -582,7 +579,7 @@ input[name="extab"]::after{
     background-color:#E9C46A ;
     padding: 20px;
     margin: 20px 10px;
-
+    width: 1330px;
     border-radius: 10px;
     /* 加上圓弧 */
     background-size: cover;
@@ -671,7 +668,7 @@ input[name="extab"]::after{
     background-color:#E9C46A ;
     padding: 20px;
     margin: 20px 10px;
-
+    width: 1330px;
     border-radius: 10px;
     /* 加上圓弧 */
     background-size: cover;
@@ -693,7 +690,7 @@ footer{
     background-color:#E9C46A ;
     padding: 20px;
     margin: 20px 10px;
-
+    width: 1330px;
     border-radius: 10px;
     /* 加上圓弧 */
     background-size: cover;
