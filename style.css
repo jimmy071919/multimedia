@@ -8,7 +8,7 @@ body {
     /* 使區塊和區塊之間是在一起的 中間沒有空格 */
     cursor:url(image/liz.png);
 }
-/* ---------------------------------- */
+/* ---------------讓RESUME的字移動------------------- */
 .moveword
 {
     animation: move-left-right 15s linear infinite;
@@ -21,11 +21,10 @@ body {
     -webkit-background-clip: text ;
     background-image: url(image/skill.png);
     /* 設定文字的背景圖片 */
-    
     -webkit-text-fill-color: #84A59D;
 }
 
-/* ---------------------------------- */
+/* ----------------自我介紹的部分------------------ */
 #intro
 {
     background-color:#E9C46A ;
