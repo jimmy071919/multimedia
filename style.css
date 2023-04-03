@@ -520,6 +520,13 @@ input[name="extab"]::after{
     font-size: 130%;
     line-height: 1.5;
 }
+.group{
+    float: left;
+}
+.groupsign{
+    margin: 3%;
+    padding: 0 3%;
+}
 /* ------------ */
 #timeperception{
     margin: 20px;
@@ -539,7 +546,7 @@ input[name="extab"]::after{
     text-align: center;
 }
 #spacce {
-    height: 500px;
+    height: 450px;
 }
 
 .timepiclist img {
