@@ -8,6 +8,7 @@ body {
     /* 使區塊和區塊之間是在一起的 中間沒有空格 */
 }
 /* ---------------讓RESUME的字移動------------------- */
+/*  */
 .moveword
 {
     animation: move-left-right 15s linear infinite;
