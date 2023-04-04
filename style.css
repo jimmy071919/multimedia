@@ -430,7 +430,7 @@ input[name="extab"]::after{
     width: 100px;
     animation: shake 1s;
     animation-iteration-count: infinite;
-    left: 625px;
+    left: 46%;
     
 }
 
