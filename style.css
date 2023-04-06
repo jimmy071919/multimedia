@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
+    
 }
+
 body {
     background-color: #F7EDE2;
     /* 顏色要加上#才可以用 */
@@ -15,6 +17,8 @@ body {
     font-size: 50px;
     font-family: 'Delicious Handrawn', cursive;
     /* 背景圖 */
+    margin: 0;
+    padding: 0;
 }
 
 #resume{
@@ -739,7 +743,7 @@ footer .Contact{
       0% {-webkit-transform: rotate(0);}
       100% {-webkit-transform: rotate(360deg);}
   }
-  @keyframes move-left-right {
+@keyframes move-left-right {
     0% {
         transform: translateX(0);
     }
